@@ -3,10 +3,10 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   
   get '/' do
-    erb :user_input.erb
+    erb :user_input
   end
   
   post '/' do 
-    
+    erb :pig_latinizer
   end
 end
