@@ -12,7 +12,6 @@ class PigLatinizer
       first_letter = word[0].downcase
   
       if ["a", "e", "i", "o", "u"].include?(first_letter)
-        # piglatinize word that starts with a vowel
         "#{word}way"
       else
         consonants = []
@@ -23,7 +22,7 @@ class PigLatinizer
               consonants << word[2]
             end
           end
-        # piglatinize word that starts with a consonant
         "#{word[consonants.length..-1] + consonants.join + "ay"}"
       end
   end
+end
