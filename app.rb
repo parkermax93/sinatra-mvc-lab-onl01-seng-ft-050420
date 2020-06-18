@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
   
   post '/' do 
-    erb :pig_latinizer
+    "Hello World"
+    # erb :pig_latinizer
   end
 end
